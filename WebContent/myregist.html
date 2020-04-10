@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>诺拉大陆</title>
+<!-- 引入脚本 -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/regist.js"></script>
+<!-- 引入样式 rel指的是relationship stylesheet 指的是 样式表  说明href是一个新的样式表引用到此文档中 -->
+<link rel="stylesheet" href="css/1.css">
+</head>
+<body background-image: url("../img/timg1.jpg");>
+	<div>
+	<a href="homepage.html"><img src="img/1.png" align="top" width="100px" height="100px"></a>
+	</div>
+	<!-- --> 
+	<audio loop="loop" autoplay="autoplay">
+		<source src="img/1.aac">
+	</audio>
+	<!-- 最外盒子 -->
+	<form action="RegistServelet" method="post" onsubmit="return f2();">
+		<div class="wrap_1">
+			<!-- 标题 -->
+			<h1>欢迎来到诺拉大陆</h1>
+			<!-- 注册的主题内容 -->
+			<div class="regist_html">
+				<!-- group:每一个输入行 -->
+				<div class="group">
+					<label>用户名：</label> <input name="username"
+						placeholder="请输入6-13个英文或者下划线">
+					<!-- 错误提示 -->
+					<span id="name1_err"></span>
+				</div>
+				<div class="group">
+					<label>昵&nbsp;&nbsp;&nbsp;称：</label> <input name="nickname" placeholder="中英文,下划线,4-10个长度">
+					<span id="nick_err"></span>
+				</div>
+				<div class="group">
+					<label>密&nbsp;&nbsp;&nbsp;码：</label> <input name="pwd"
+						type="password" placeholder="中英文 下划线 数字 6-16个长度"><span id="pwd_err"></span>
+				</div>
+				<div class="group">
+					<label>性&nbsp;&nbsp;&nbsp;别：</label> 男<input type="radio"
+						name="gendar" value="m" checked> 女<input type="radio"
+						name="gendar" value="f">
+				</div>
+				<div class="group">
+					<label>年&nbsp;&nbsp;&nbsp;龄：</label> <input name="age" placeholder="在1-120合法年龄范围内"> <span
+						id="age_err"></span>
+				</div>
+				<div class="group">
+					<label>电&nbsp;&nbsp;&nbsp;话：</label> <input name="phone" placeholder="正确的11位号码"> <span
+						id="phone_err"></span>
+				</div>
+				<div class="group">
+					<img alt="验证码" src="verify" id="img_1"> <input name="code" placeholder="输入验证码,不分大小写">
+					<!-- 错误显示 -->
+					<span id="code_err"></span> <br> <a href="#" onclick="f1();">看不清楚，换一张</a>
+				</div>
+			</div>
+			<!-- 页脚div：注册，重置 -->
+			<div class="regist_button">
+				<input value="注册" type="submit"> <a href="login.html"> <input
+					value="以有账号，直接登陆" type="button">
+				</a>
+			</div>
+			<p>@makun</p>
+		</div>
+	</form>
+</body>
+</html>

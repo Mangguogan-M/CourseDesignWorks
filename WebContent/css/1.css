@@ -1,0 +1,42 @@
+body{
+	margin: 0 0;
+	padding: 0 0;
+	background-image: url("../img/timg1.jpg");/** 背景图 **/
+	background-size: cover;/** 平铺 **/
+}
+.login_warp{
+	position: absolute;/** 设置位置的绝对定位 **/
+	background-color: #999999;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+	right: 50%;
+	margin: -200px 150px 0 0;/** 分别对应宽度的一半 **/
+	text-align: center;
+	opacity: 0.5;/** 透明度 **/
+}
+.wrap_1{
+	position: absolute;/** 设置位置的绝对定位 **/
+	background-color: #999999;
+	width: 420px;
+	height: 500px;
+	top: 50%;
+	right: 50%;
+	margin: -250px 0 0 500px;/** 分别对应宽度的一半 **/
+	text-align: center;
+	opacity: 0.5;/** 透明度 **/
+}
+.wrap_1 .regist_html .group{
+	margin-top: 20px;
+}
+label {
+	width: 100px;
+	display: inline-block;
+}
+.regist_button{
+	margin: 20px 50px;
+}
+p{
+	margin-top: 100px;
+}
+

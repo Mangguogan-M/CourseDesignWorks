@@ -1,0 +1,15 @@
+.main_wrap{
+	
+	margin: 0 0 0 20px;
+}
+.a_1{
+	margin: 0 0 0 200px;
+}
+.table_1{
+	top: 50%;
+	right: 50%;
+	margin: -200px 0 0 200px;/** 分别对应宽度的一半 **/
+}
+.span_1{
+	margin: -200px  0 200px;
+}
